@@ -15,15 +15,15 @@ const show_data=document.getElementById("show_data1")
 show_data.addEventListener("click",()=>{console.log(obj.section1)})
 //section1 
 const html_section1=document.querySelectorAll(".section1")
-console.log(html_section1)
+// console.log(html_section1)
 for(let i=0;i<html_section1.length;i++){
-  console.log(html_section1[i])
-  obj.section1[i]="hello";
-  console.log(obj)
+  // console.log(html_section1[i])
+  // obj.section1[i]="hello"; 
+  // console.log(obj)
 
 
   html_section1[i].addEventListener("input",()=>{
-    console.log(html_section1[i].value)
+    // console.log(html_section1[i].value)
 
     obj.section1[i]=html_section1[i].value
 
@@ -46,13 +46,28 @@ function design1(){
   main_div1.style.margin="10px";
 
   main_div1.style.backgroundColor="red";
-  console.log("hello");
+  // console.log("hello");
 
 
   main_div1.addEventListener("click",()=>{
-const display_selected_template_in_main=document.getElementById("display")
-display_selected_template_in_main.innerHTML=main_div1.outerHTML
-  })
+    const display_selected_template_in_main=document.getElementById("display")
+    
+    const div_main_to_display=document.createElement("div");
+    div_main_to_display.style.width="90%"
+    div_main_to_display.style.height="90%"
+    div_main_to_display.style.backgroundColor="red";
+    display_selected_template_in_main.innerHTML=div_main_to_display.outerHTML
+    // display_selected_template_in_main.appendChild(div_main_to_display)
+    
+    
+
+
+
+    
+    
+ 
+
+      })
    }
    
 function design2(){
@@ -61,7 +76,7 @@ function design2(){
   main_div1.style.width="280px";
   main_div1.style.height="350px";
   main_div1.style.backgroundColor="yellow";
-  console.log("hello");
+  // console.log("hello");
   main_div1.style.margin="10px";
 
   main_div1.addEventListener("click",()=>{
@@ -70,7 +85,7 @@ function design2(){
     const div_main_to_display=document.createElement("div");
     div_main_to_display.style.width="90%"
     div_main_to_display.style.height="90%"
-    div_main_to_display.style.backgroundColor="white";
+    div_main_to_display.style.backgroundColor="yellow";
     display_selected_template_in_main.innerHTML=div_main_to_display.outerHTML
     // display_selected_template_in_main.appendChild(div_main_to_display)
     
@@ -89,18 +104,57 @@ function design3(){
     design_div.appendChild(main_div1);
     main_div1.style.width="280px";
   main_div1.style.height="350px";
-    main_div1.style.backgroundColor="yellow";
-    console.log("hello");
+    main_div1.style.backgroundColor="green";
+    // console.log("hello");
     main_div1.style.margin="10px";
+    main_div1.addEventListener("click",()=>{
+      const display_selected_template_in_main=document.getElementById("display")
+      
+      const div_main_to_display=document.createElement("div");
+      div_main_to_display.style.width="90%"
+      div_main_to_display.style.height="90%"
+      div_main_to_display.style.backgroundColor="green";
+      display_selected_template_in_main.innerHTML=div_main_to_display.outerHTML
+      // display_selected_template_in_main.appendChild(div_main_to_display)
+      
+      
+  
+  
+  
+      
+      
+   
+  
+        })
      }
      function design4(){
       const main_div1=document.createElement("div");
       design_div.appendChild(main_div1);
       main_div1.style.width="280px";
       main_div1.style.height="350px";
-      main_div1.style.backgroundColor="yellow";
+      main_div1.style.backgroundColor="gold";
       console.log("hello");
       main_div1.style.margin="10px";
+
+      main_div1.addEventListener("click",()=>{
+        const display_selected_template_in_main=document.getElementById("display")
+        
+        const div_main_to_display=document.createElement("div");
+        div_main_to_display.style.width="90%"
+        div_main_to_display.style.height="90%"
+        div_main_to_display.style.backgroundColor="gold";
+        display_selected_template_in_main.innerHTML=div_main_to_display.outerHTML
+        // display_selected_template_in_main.appendChild(div_main_to_display)
+        
+        
+    
+    
+    
+        
+        
+     
+    
+          })
        }
 const obj_design_option=[
  design1(),
