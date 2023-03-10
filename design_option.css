@@ -1,0 +1,9 @@
+#design1{
+width: 100vw;
+min-height: 200px;
+background-color: blueviolet;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+}

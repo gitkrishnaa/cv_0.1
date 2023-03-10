@@ -1,0 +1,34 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+#main{
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+}
+#input{
+  width: 45%;
+  background-color: rgb(14, 236, 32);
+}
+#display{
+  width: 45%;
+  background-color: rgb(236, 14, 162);
+}
+#setting{
+  width: 10%;
+  background-color: rgb(14, 203, 236);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  height: 100%;
+  justify-content: space-around;
+}
+#setting>div{
+width: 50%;
+background-color: rgb(236, 166, 13);
+min-height: 50px;
+max-height:80px; 
+border-radius: 20px 0px 0px 20px;
+}
