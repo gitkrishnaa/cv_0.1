@@ -77,7 +77,7 @@ personal_info_div.appendChild(personal_info_name);
     const personal_info_name=document.createElement("h1");
     personal_info_name.innerText=user_data.section1[0];
 
-    personal_info_name.id="user_name"
+    personal_info_name.id="user_name";
 
 
     personal_info_div.appendChild(personal_info_name);
