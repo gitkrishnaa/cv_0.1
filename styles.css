@@ -15,6 +15,9 @@
 #display{
   width: 45%;
   background-color: rgb(236, 14, 162);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 #setting{
   width: 10%;
