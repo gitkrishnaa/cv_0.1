@@ -32,21 +32,42 @@ function model1(html_display_div){
   head_name.style.height="20%"
   head_name.style.marginTop="5%"
 
-  const span1=document.createElement("span");
+
+  //text resizing..................................................................................
+ //****** */ note (important)
+//text size will depand on range1 value,first i have use percentage but it not working as expected
+//all text resizeing will be (range1.value)px example 5px 45px etc
+
+//text creating phase
+  const span1=document.createElement("h1");
   head_name.appendChild(span1)
   span1.innerText="Krishan Thkaur"
-  span1.style.fontSize=``
+  // span1.style.fontSize=`5vw`
 
+//\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\/////////////////////////////////////////////////////////////////////////
+  // note-to dispaly range value
+ const display_range_value_span= document.querySelector("#display_range_value_span")
+ display_range_value_span.innerText=range1.value
+//
 
+// resize will not be fuction it will be add in future
   range1.addEventListener("input",()=>{
+    display_range_value_span.innerText=range1.value
+
+
     large_main_div.style.width=`${range1.value/10*3}cm`
    
     large_main_div.style.height=`${range1.value/10*4}cm`
-    span1.style.fontSize=`${range1.value()}`
+
+    //text resize 
+    // span1.style.fontSize=`${range1.value}px`//workig (resize text when size is change)
+    span1.style.fontSize=`${range1.value}px`
+    html_display_div.innerHTML=main_div.outerHTML;
   })
   
-  html_display_div.innerHTML=main_div.outerHTML;
+
   // note-i am usng innerhtml instead of appendChild because innerhtml just replace everything thats what i want but append just adding
+  html_display_div.innerHTML=main_div.outerHTML;
 }
 
 model1(large_main_div)
