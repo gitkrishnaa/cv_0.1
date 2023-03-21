@@ -3,7 +3,7 @@
 }
 #main_div{
   width: 100vw;
-  height: 100vh;
+  height: 120vh;
   background-color: rgb(240, 238, 238);
   display: flex;
   justify-content: center;
@@ -16,8 +16,8 @@
   position: absolute;
   left: 200px;
   top: 10px;
-  width: 13.5cm;
-  height: 18cm;
+  width: 18cm;
+  min-height: 23cm;
   background-color:white ;
   margin: 10px;
   /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
